@@ -2,11 +2,24 @@
     <string name="app_name">MeuPrimeiroAppDio</string>
     <string name="app_name2">MeuPrimeiroAppDio</string>
     <string name="selecione_idioma">Selecione um idioma</string>
+    <string name="title_texto">Textos para leitura</string>
 
     <string-array name="lista_idiomas">
-        <item>Padrão</item>
         <item>Português Br</item>
         <item>Inglês</item>
         <item>Espanhol</item>
     </string-array>
+
+    <string name="textos">
+        1) A vida é uma jornada cheia de altos e baixos. Aprenda a apreciar cada momento, mesmo os difíceis, pois eles são uma oportunidade para crescer e se tornar mais forte
+        \n\n
+        2) O amor é um sentimento poderoso que pode mudar a vida de uma pessoa. Quando você encontra a pessoa certa, tudo parece possível e o mundo inteiro parece mais brilhante.
+        \n\n
+        3) A natureza é uma fonte infinita de beleza e inspiração. Desde as montanhas majestosas até as flores delicadas, há algo para todos apreciarem e admirarem.
+        \n\n
+        4) A amizade é um dos maiores presentes que podemos receber na vida. Ter alguém em quem confiar, rir e compartilhar momentos especiais é algo que todos deveriam experimentar.
+        \n\n
+        5)O sucesso é uma jornada, não um destino final. É importante definir metas realistas e trabalhar duro para alcançá-las, mas também é importante lembrar que o fracasso faz parte do processo de aprendizagem.
+    </string>
+
 </resources>

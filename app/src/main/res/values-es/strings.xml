@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">espanhol MeuPrimeiroAppDio</string>
-    <string name="app_name2">espanhol MeuPrimeiroAppDio</string>
-    <string name="selecione_idioma">espanhol Selecione um idioma</string>
+    <string name="app_name">MiPrimeraAplicacionDio</string>
+    <string name="app_name2">MiPrimeraAplicacionDio</string>
+    <string name="selecione_idioma">Selecciona un idioma</string>
+    <string name="title_texto">Textos para leer</string>
+
+    <string-array name="lista_idiomas">
+        <item>portugués Br</item>
+        <item>Inglés</item>
+        <item>Español</item>
+    </string-array>
+
+    <string name="textos">
+        1) La vida es un viaje lleno de altibajos. Aprende a valorar cada momento, incluso los difíciles, ya que son una oportunidad para crecer y fortalecerte.
+        \n\n
+        2) El amor es un sentimiento poderoso que puede cambiar la vida de una persona. Cuando encuentras a la persona adecuada, todo parece posible y el mundo entero parece más brillante.
+        \n\n
+        3) La naturaleza es una fuente infinita de belleza e inspiración. Desde las majestuosas montañas hasta las delicadas flores, hay algo para que todos aprecien y admiren.
+        \n\n
+        4) La amistad es uno de los mayores regalos que podemos recibir en la vida. Tener a alguien en quien confiar, reír y compartir momentos especiales es algo que todos deberían experimentar.
+        \n\n
+        5) El éxito es un viaje, no un destino final. Es importante establecer metas realistas y trabajar duro para alcanzarlas, pero también es importante recordar que el fracaso es parte del proceso de aprendizaje.
+    </string>
 
 </resources>

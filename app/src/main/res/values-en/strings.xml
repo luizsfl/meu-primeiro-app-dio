@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">englesh MeuPrimeiroAppDio</string>
-    <string name="app_name2">englesh MeuPrimeiroAppDio</string>
-    <string name="selecione_idioma">englesh Selecione um idioma</string>
+    <string name="app_name">MyFirstAppDio</string>
+    <string name="app_name2">MyFirstAppDio</string>
+    <string name="selecione_idioma">Select a language</string>
+    <string name="title_texto">Texts for reading</string>
+
+    <string-array name="lista_idiomas">
+        <item>Portuguese Br</item>
+        <item>English</item>
+        <item>Spanish</item>
+    </string-array>
+
+    <string name="textos">
+        1) Life is a journey full of ups and downs. Learn to appreciate every moment, even the difficult ones, as they are an opportunity to grow and become stronger.
+        \n\n
+        2) Love is a powerful feeling that can change a person is life. When you find the right person, everything seems possible and the whole world seems brighter.
+        \n\n
+        3) Nature is an infinite source of beauty and inspiration. From the majestic mountains to the delicate flowers, there is something for everyone to appreciate and admire.
+        \n\n
+        4) Friendship is one of the greatest gifts we can receive in life. Having someone to confide in, laugh with, and share special moments with is something everyone should experience.
+        \n\n
+        5) Success is a journey, not a final destination. It is  important to set realistic goals and work hard to achieve them, but it is also important to remember that failure is part of the learning process.
+    </string>
+
 </resources>
