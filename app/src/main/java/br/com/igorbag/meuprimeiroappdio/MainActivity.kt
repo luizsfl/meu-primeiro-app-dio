@@ -1,14 +1,13 @@
 package br.com.igorbag.meuprimeiroappdio
 
+import android.content.Context
+import android.content.DialogInterface
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
-import android.view.View
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import br.com.igorbag.meuprimeiroappdio.databinding.ActivityMainBinding
 import java.util.Locale
-
 
 //O desafio sera criar uma valor dentro do string.xml
 // E trocar o texto do xml e tornar internacional (Ingles, Espanhol, etc...)
@@ -22,26 +21,11 @@ class MainActivity : AppCompatActivity() {
 
         getSupportActionBar()?.hide();
 
-        val arrayAdapterLinguagens = ArrayAdapter.createFromResource(this,R.array.lista_idiomas,
-            androidx.appcompat.R.layout.support_simple_spinner_dropdown_item)
-
-        viewbinding.sppinerLingugagens.adapter = arrayAdapterLinguagens
-
         viewbinding.textoLeitura.setMovementMethod(ScrollingMovementMethod())
-        0
-        viewbinding.sppinerLingugagens.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
 
-            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                when(position){
-                    0 -> selecionarIdioma("pt",this@MainActivity)
-                    1 -> selecionarIdioma("en",this@MainActivity)
-                    2 -> selecionarIdioma("es",this@MainActivity)
-                }
-            }
-
-            override fun onNothingSelected(parent: AdapterView<*>?) {}
+        viewbinding.btSelecionaIdioma.setOnClickListener {
+            showIdioma(this)
         }
-
     }
 
     private fun selecionarIdioma(idioma:String,context : MainActivity){
@@ -63,4 +47,39 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+    private fun showIdioma(contextTela : Context){
+
+        val items: Array<String> = resources.getStringArray(R.array.lista_idiomas)
+
+        if(items.size>0) {
+            val builder = AlertDialog.Builder(contextTela!!)
+            builder.setTitle("Filtros criados")
+
+            var checkedItem = 0
+
+            builder.setSingleChoiceItems(items, checkedItem,
+                DialogInterface.OnClickListener { dialog, which ->
+                    checkedItem = which
+                }
+            )
+
+            builder.setPositiveButton("OK") { dialog, which ->
+                when(checkedItem){
+                    0 -> selecionarIdioma("pt",this@MainActivity)
+                    1 -> selecionarIdioma("en",this@MainActivity)
+                    2 -> selecionarIdioma("es",this@MainActivity)
+                }
+            }
+
+            builder.setNegativeButton("Cancel", null)
+
+            val dialog = builder.create()
+            dialog.setCanceledOnTouchOutside(false);
+
+            dialog.show()
+
+        }
+    }
+
 }
