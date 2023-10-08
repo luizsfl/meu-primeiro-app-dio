@@ -3,3 +3,6 @@ O objetivo desse desafio era criar os arquivos strings para deixa-lo internacion
 Eu criei os arquivos string e como adicional eu incluir um dialog para o usuário conseguir alterar o idioma sem precisar sair do aplicativo.
 
 ![WhatsApp Image 2023-10-08 at 06 57 21](https://github.com/luizsfl/ApresentaGit/assets/70184804/772b5032-1cf8-430f-9e32-3331a366c335)
+
+https://github.com/luizsfl/ApresentaGit/assets/70184804/77072204-c42d-416b-88e0-2fba98d7d12f
+
